@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /* --colorWhite: #ffffff; bs-white */
+  --colorWhite: #000000;
+  --colorPrimary: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  display: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background: var(--bs-white) !important;
+  background-repeat: repeat-y ;
+  height: 100vh !important;
+}
+
+.container-fluid,.container{
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+/* #siteLoader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  z-index: 99999 !important;
+  background-color: #00000031;
+  color: var(--colorPrimary) !important;
+
+} */
+
+.navbar{
+  z-index: 9999999999999999 !important;
+}
+.nav-link{
+  border-radius: 0.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-toggler,
+.form-select,
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: var(--colorPrimary) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#carouselExampleSlidesOnly{
+  min-height: 200px !important;
+}
+
+ul{
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+ul li{
+  list-style: none !important;
+  margin: 0.5rem 0rem;
+}
+
+.form-label {
+  color: dimgray !important;
+}
+
+.text-primary {
+  color: var(--colorPrimary) !important;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--colorPrimary) !important;
+  color: var(--bs-white) !important;
+}
+
+a {
+  color: var(--colorPrimary) !important;
+  cursor: pointer;
+}
+
+
+.btn {
+  color: var(--bs-dark);
+}
+
+.border-primary {
+  border-color: var(--colorPrimary) !important;
+}
+
+.active {
+  background-color: var(--colorPrimary) !important;
+  color: var(--bs-white) !important;
+}
+
+.tab-pane.active {
+  background-color: var(--bs-white) !important;
+  color: var(--bs-dark) !important;
+}
+
+.dropdown-item:active {
+  background-color: var(--colorPrimary) !important;
+  color: var(--bs-white) !important;
+}
+
+.list-group-item.active,
+.active>.page-link {
+  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorPrimary) !important;
+  color: var(--bs-white) !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorPrimary) !important;
+}
+
+
+.form-check-input:focus {
+  border-color: var(--bs-dark) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--bs-light-rgb) !important;
+}
+
+.form-range::-webkit-slider-thumb {
+  background: var(--colorPrimary) !important;
+
+}
+
+section.section {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+
+.page404{
+  font-size: 5rem;
+
+}
+
+.footer{
+  background: var(--colorPrimary) !important;
+}
+
+.footer .footer-link{
+  color: var(--bs-secondary) !important;
 }
