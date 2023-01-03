@@ -46,10 +46,10 @@ function Header() {
                 <div className="container mt-5 position-absolute top-50 start-50 translate-middle">
                     <div className="row">
                         <div className="col-lg-10 col-md-8 col-sm-12">
-                            <input type="search" className="form-control p-3" placeholder="Search your favourite movies, webseries" aria-label="Search your favourite movies, webseries" />
+                            <input type="search" className="form-control p-3 shadow" placeholder="Search your favourite movies, webseries" aria-label="Search your favourite movies, webseries" />
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-12">
-                            <button className='btn btn w-100 btn-primary p-3'>Search</button>
+                            <button className='btn btn w-100 btn-primary p-3 shadow'>Search</button>
                         </div>
                     </div>
                 </div>

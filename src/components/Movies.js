@@ -1,47 +1,33 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { useGlobalContext } from '../Context'
+
 
 function Movies() {
+
+
+    const { movies } = useGlobalContext();
+
     return (
         <div className="container my-4">
             <div className="row gx-sm-1 gx-lg-5">
-                <div className="col-lg-3 col-md-4 col-sm-12 my-2">                    <div className="card">
-                    <img src="https://source.unsplash.com/100x100/?movie" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Get Lost</h5>
-                        <p className="card-text">Horror,English</p>
-                    </div>
-                </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-12 my-2">
-                    <div className="card">
-                        <img src="https://source.unsplash.com/100x100/?movie" className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Get Lost</h5>
-                            <p className="card-text">Horror,English</p>
-                        </div>
-                    </div>
 
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-12 my-2">
-                    <div className="card">
-                        <img src="https://source.unsplash.com/100x100/?movie" className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Get Lost</h5>
-                            <p className="card-text">Horror,English</p>
-                        </div>
-                    </div>
+                {
+                    movies.map((movie) => {
+                        return (
+                            <Link to={`/movie/${movie.imdbID}`} className="col-lg-3 col-md-4 col-sm-12 mt-4 text-decoration-none" key={movie.imdbID}>
+                                <div className="card">
+                                    <img src={movie.Poster} className="p-3" height="360px" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title"> {movie.Title}</h5>
+                                        <p className="card-text">{movie.Type} {movie.Year}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        )
+                    })
+                }
 
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-12 my-2">
-                    <div className="card">
-                        <img src="https://source.unsplash.com/100x100/?movie" className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Get Lost</h5>
-                            <p className="card-text">Horror,English</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     )

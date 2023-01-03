@@ -3,9 +3,9 @@ import React from 'react'
 function Footer() {
     return (
         <div className='footer container-fluid bg-dark'>
-            <div class="container">
-                <div class="row py-4 align-items-center text-center">
-                    <div class="col-md-3 col-sm-6 col-xsm-12">
+            <div className="container">
+                <div className="row py-4 align-items-center text-center">
+                    <div className="col-md-3 col-sm-6 col-xsm-12">
                        <ul>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
@@ -14,7 +14,7 @@ function Footer() {
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                        </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xsm-12">
+                    <div className="col-md-3 col-sm-6 col-xsm-12">
                        <ul>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
@@ -23,7 +23,7 @@ function Footer() {
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                        </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xsm-12">
+                    <div className="col-md-3 col-sm-6 col-xsm-12">
                        <ul>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
@@ -32,7 +32,7 @@ function Footer() {
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                        </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xsm-12">
+                    <div className="col-md-3 col-sm-6 col-xsm-12">
                        <ul>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
                         <li><a href="/" className='footer-link'>Link of web</a></li>
