@@ -31,12 +31,15 @@ body{
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
-/* #siteLoader {
+
+.row{
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+
+#siteLoader {
   width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +47,7 @@ body{
   background-color: #00000031;
   color: var(--colorPrimary) !important;
 
-} */
+} 
 
 .navbar{
   z-index: 9999999999999999 !important;
@@ -144,7 +147,7 @@ a {
 
 .card:hover{
   cursor: pointer;
-  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.5)!important;
   transform: scale(1.01);
 }
 

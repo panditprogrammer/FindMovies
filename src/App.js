@@ -10,6 +10,8 @@ function App() {
   return (
     <Routes>
       <Route exact path="/" element={<Home></Home>}></Route>
+      {/* <Route path="/panditprogrammer" element={<Goto url="http://panditprogrammer.com" />} />
+      <Route path="/api" element={<Goto url="https://www.omdbapi.com/" />} /> */}
       <Route path="/movie/:id/" element={<SingleMovies></SingleMovies>}></Route>
       <Route path="*" element={<Error></Error>}></Route>
     </Routes>
